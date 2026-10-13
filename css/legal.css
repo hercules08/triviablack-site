@@ -19,6 +19,16 @@ main.legal th, main.legal td { border: 1px solid #2A2A2A; padding: 8px 10px; ver
 main.legal th { background: #1A1A1A; color: #fff; }
 .callout { background: #161616; border: 1px solid #2A2A2A; border-radius: 12px; padding: 16px 18px; margin: 18px 0; }
 .btn-gold { display: inline-block; background: linear-gradient(#F9C64C, #E3902D); color: #111 !important; font-weight: 700; padding: 12px 22px; border-radius: 999px; text-decoration: none; letter-spacing: .5px; }
+/* FAQ (support.html): native details/summary, styled like .callout */
+main.legal details { background: #161616; border: 1px solid #2A2A2A; border-radius: 12px; padding: 0 18px; margin: 10px 0; }
+main.legal summary { cursor: pointer; padding: 14px 0; font-weight: 700; color: #fff; }
+main.legal summary::marker { color: #F9C64C; }
+main.legal summary:hover { color: #FFD978; }
+main.legal summary:focus-visible { outline: 2px solid #F9C64C; outline-offset: 4px; border-radius: 6px; }
+main.legal details[open] { padding-bottom: 4px; }
+main.legal details[open] > summary { border-bottom: 1px solid #2A2A2A; margin-bottom: 12px; }
+main.legal details ol { padding-left: 22px; }
+main.legal details li { margin: 6px 0; }
 footer.legal-footer { border-top: 1px solid #1F1F1F; padding: 22px 16px 40px; text-align: center; font-size: 14px; color: #8A8A8A; }
 footer.legal-footer a { color: #CFCFCF; margin: 0 10px; }
 @media (max-width: 480px) { main.legal h1 { font-size: 28px; } main.legal table { font-size: 14px; } }
