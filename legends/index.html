@@ -62,7 +62,7 @@
           </div>
           <div class="stores">
             <a class="apple js-store-apple" href="https://apps.apple.com/us/app/trivia-black/id1476178356?pt=118186768&amp;ct=legends-direct&amp;mt=8"><img src="/images/app-store-black-on-color@2x-vUVAkYHUgzYCyeyfUGm8cda3C.png" alt="Download on the App Store" width="163" height="48"></a>
-            <a class="js-store-play" href="https://play.google.com/store/apps/details?id=com.swyftstudios.trivia_black&amp;referrer=utm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dlegends-direct"><img src="/images/googleplay-btn.png" alt="Get it on Google Play" width="163" height="48"></a>
+            <a class="js-store-play" href="https://play.google.com/store/apps/details?id=com.swyftstudios.trivia_black&amp;referrer=utm_source%3Dtriviablack.com%26utm_medium%3Dreferral%26utm_campaign%3Dlegends-direct"><img src="/images/googleplay-btn.png" alt="Get it on Google Play" width="163" height="48"></a>
           </div>
           <p class="cmp-note">Free to download on iPhone, iPad and Android.</p>
         </div>
@@ -170,7 +170,7 @@
           <p class="muted">Get Trivia Black to play Black Tech Legends, challenge friends head to head, play solo and pick up new decks as they drop. Free to download.</p>
           <div class="stores">
             <a class="apple js-store-apple" href="https://apps.apple.com/us/app/trivia-black/id1476178356?pt=118186768&amp;ct=legends-direct&amp;mt=8"><img src="/images/app-store-black-on-color@2x-vUVAkYHUgzYCyeyfUGm8cda3C.png" alt="Download on the App Store" width="163" height="48" loading="lazy"></a>
-            <a class="js-store-play" href="https://play.google.com/store/apps/details?id=com.swyftstudios.trivia_black&amp;referrer=utm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dlegends-direct"><img src="/images/googleplay-btn.png" alt="Get it on Google Play" width="163" height="48" loading="lazy"></a>
+            <a class="js-store-play" href="https://play.google.com/store/apps/details?id=com.swyftstudios.trivia_black&amp;referrer=utm_source%3Dtriviablack.com%26utm_medium%3Dreferral%26utm_campaign%3Dlegends-direct"><img src="/images/googleplay-btn.png" alt="Get it on Google Play" width="163" height="48" loading="lazy"></a>
           </div>
           <p class="muted" style="margin-top:24px">Bringing Black tech history to your team? <a href="/partners/">Sponsor a deck or host a live game</a>.</p>
         </div>
@@ -221,19 +221,21 @@
 
       var src = '';
       var city = '';
+      var paid = false;   // true only for Google Ads clicks: a click id or an ad's ?src= code
       try {
         var params = new URLSearchParams(window.location.search);
         src = clean(params.get('src'));
         city = clean(params.get('city'));
-      } catch (e) { src = ''; city = ''; }
+        paid = !!(src || params.get('gclid') || params.get('gbraid') || params.get('wbraid'));
+      } catch (e) { src = ''; city = ''; paid = false; }
 
       // Remember the codes for this tab, so they survive a visit to another page and back.
       try {
-        if (src || city) {
-          window.sessionStorage.setItem(STORAGE_KEY, JSON.stringify({ src: src, city: city }));
+        if (src || city || paid) {
+          window.sessionStorage.setItem(STORAGE_KEY, JSON.stringify({ src: src, city: city, paid: paid }));
         } else {
           var saved = JSON.parse(window.sessionStorage.getItem(STORAGE_KEY) || 'null');
-          if (saved && typeof saved === 'object') { src = clean(saved.src); city = clean(saved.city); }
+          if (saved && typeof saved === 'object') { src = clean(saved.src); city = clean(saved.city); paid = saved.paid === true; }
         }
       } catch (e) { /* storage blocked or unreadable: attribution falls back to "direct" */ }
 
@@ -241,8 +243,10 @@
 
       var appleUrl = APP_STORE + '?pt=' + encodeURIComponent(APPLE_PT) +
         '&ct=' + encodeURIComponent(CAMPAIGN + '-' + src) + '&mt=8';
+      // Only ad clicks are labelled google / cpc, so direct and organic visits don't inflate paid installs.
       var playUrl = PLAY_STORE + '&referrer=' + encodeURIComponent(
-        'utm_source=google&utm_medium=cpc&utm_campaign=' + CAMPAIGN + '-' + src);
+        (paid ? 'utm_source=google&utm_medium=cpc' : 'utm_source=triviablack.com&utm_medium=referral') +
+        '&utm_campaign=' + CAMPAIGN + '-' + src);
 
       var i;
       var appleLinks = document.querySelectorAll('.js-store-apple');
