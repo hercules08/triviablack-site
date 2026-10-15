@@ -1,268 +1,236 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Trivia Black - A celebration of Black culture disguised as a game.</title>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css?v=1">
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="img/mzl.clrnjwyb.png" rel="shortcut icon" type="image/x-icon">
-  <meta name="description"
-    content="Trivia Black is a celebration of Black culture - disguised as a game!     Come join in on one of the fastest growing online communities and have fun playing the world's #1 head-to-head trivia quiz game featuring Black history, figures, music and films!        Challenge friends, family and strangers to a match and see who can claim all 6 of the category pieces first!         When you spin the wheel you will be asked questions from these potential categories:     - Black History    - Music    - Film    - Geography    - Sports    - Black Girl Magic         If you win all 6 categories before your opponent, you win - it's that simple!        You already know you are smarter than your friends, so why not just prove it?!         Trivia Black is for all ages and is a great way to learn something. Your teachers would be proud!">
-  <meta name="keywords" content="trivia, black history, black trivia, black">
-  <!-- Facebook -->
-  <meta property="og:site_name" content="Trivia Black">
-  <meta property="og:title" content="Trivia Black is a celebration of Black culture - disguised as a game!">
-  <meta property="og:description"
-    content="Challenge friends, family and strangers to a match and see who can claim all 6 of the category pieces first!">
-  <meta property="og:url" content="http://">
-  <meta property="og:image" content="img/mzl.clrnjwyb.png">
-  <meta property="og:type" content="website">
-  <!-- Twitter -->
-  <meta name="twitter:card" content="app">
-  <meta name="twitter:title" content="Trivia Black is a celebration of Black culture - disguised as a game!">
-  <meta name="twitter:description"
-    content="Challenge friends, family and strangers to a match and see who can claim all 6 of the category pieces first!">
-  <meta name="twitter:image:src" content="img/mzl.clrnjwyb.png">
-  <meta name="twitter:domain" content="http://">
-  <meta name="twitter:app:name:iphone" content="Trivia Black">
-  <meta name="twitter:app:id:iphone" content="1476178356">
-  <meta name="twitter:app:name:ipad" content="Trivia Black">
-  <meta name="twitter:app:id:ipad" content="1476178356">
+  <title>Trivia Black: The #1 Black culture quiz game</title>
+  <meta name="description" content="Know the culture? Prove it. Head-to-head trivia on Black history, music, film and TV, sports, geography and Black Girl Magic. Free to download on iPhone and Android, plus live games for your event.">
+  <link rel="canonical" href="https://www.triviablack.com/">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/tb-icon-192.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <!-- Apple Smart App Banner -->
   <meta name="apple-itunes-app" content="app-id=1476178356">
-
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Raleway:400,100,200,300,500,600,700,800,900"
-    rel="stylesheet" type="text/css">
-  <style type="text/css">
-    #public-landing-page.template-1 .hero,
-    #public-landing-page.template-2 .hero,
-    #public-landing-page.template-3 .hero,
-    #public-landing-page.template-4 .hero,
-    #public-landing-page.template-7 .hero,
-    #public-landing-page.template-8 .hero .graphic,
-    #public-landing-page.template-9 .bg-color,
-    #public-landing-page .store-badge-white-text,
-    #public-landing-page.template-1color .hero,
-    #public-landing-page.template-2color .hero {
-      background: #0C0C0C;
-    }
-
-    #public-landing-page.template-5 .hero h2,
-    #public-landing-page.template-6 .hero h1,
-    #public-landing-page.template-8 .hero,
-    #public-landing-page.template-9 .hero h2,
-    #public-landing-page .hero .btn,
-    #public-landing-page .navbar .btn,
-    #public-landing-page .navbar.invert-navbar a,
-    #public-landing-page footer a,
-    #public-landing-page .benefit-header {
-      color: #0C0C0C;
-    }
-
-    #public-landing-page .btn.btn-primary.btn-primary-invert,
-    #public-landing-page .navbar.invert-navbar .btn.btn-primary,
-    #public-landing-page .navbar .navbar-collapse.in .btn.btn-primary,
-    #public-landing-page .navbar .navbar-toggle .icon-bar,
-    #public-landing-page .download-text {
-      color: white;
-      background-color: #0C0C0C;
-    }
-
-    #public-landing-page.template-1 .hero,
-    #public-landing-page.template-2 .hero,
-    #public-landing-page.template-4 .hero {
-      overflow: hidden;
-    }
-
-    #public-landing-page .hero .blurred-cover {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: 1px;
-      background-image: url('images/landing.jpg');
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      -webkit-filter: blur(50px);
-      -moz-filter: blur(50px);
-      -o-filter: blur(50px);
-      -ms-filter: blur(50px);
-      filter: blur(50px);
-      margin: -60% -40% -40%;
-    }
-
-    #public-landing-page .hero .blurred-cover .darken {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: 2px;
-      background: rgba(0, 0, 0, .3);
-    }
-
-    @media screen and (max-width: 767px) {
-      #public-landing-page.template-9 .hero h1 {
-        background: #0C0C0C;
-      }
-    }
-  </style>
+  <!-- Social cards -->
+  <meta property="og:site_name" content="Trivia Black">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.triviablack.com/">
+  <meta property="og:title" content="Trivia Black: Know the culture? Prove it.">
+  <meta property="og:description" content="The #1 Black culture quiz game. Challenge friends, play solo, or bring a live game to your event.">
+  <meta property="og:image" content="https://www.triviablack.com/img/og-trivia-black.jpg">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="500">
+  <meta property="og:image:alt" content="Trivia Black logo, the words Know the culture? Prove it. and the game's category wheel">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@triviablack">
+  <meta name="twitter:title" content="Trivia Black: Know the culture? Prove it.">
+  <meta name="twitter:description" content="The #1 Black culture quiz game. Challenge friends, play solo, or bring a live game to your event.">
+  <meta name="twitter:image" content="https://www.triviablack.com/img/og-trivia-black.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/legal.css">
+  <link rel="stylesheet" href="css/site.css?v=1">
 </head>
+<body class="site">
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="rainbow" aria-hidden="true"></div>
+  <a class="announce" href="houston/"><strong>Houston &middot; Nov 2&ndash;6</strong> <span>Play the new Black Tech Legends deck &rarr;</span></a>
 
-<body>
-  <div id="skit-controller">
-    <div id="public-landing-page" class="
-            template-8
-            full-screen
-            centered
-            ">
-      <section class="hero">
-        <div class="container">
-          <nav class="navbar navbar-default
-                     invert-navbar
-                     invert-buttons
-                     ">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <a class="navbar-brand visible-xs" href="index.html">
-                  <img alt="Trivia Black" src="img/mzl.clrnjwyb.png" class="app-icon">
-                </a>
-              </div>
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                  <li class="visible-xs"><a href="index.html">Home Page</a></li>
-                  <li class="visible-xs"><a href="https://apps.apple.com/us/app/trivia-black/id1476178356"
-                      target="_blank">Download from App Store</a></li>
-                  <li class="visible-xs"><a
-                      href="https://play.google.com/store/apps/details?id=com.swyftstudios.trivia_black"
-                      target="_blank">Download from Google Play</a></li>
-                  <li class="visible-xs"><a href="support.html">Support</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          <div class="row text-center">
-            <div class="graphic">
-              <div>
-                <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
-                  <div class="carousel-inner" role="listbox">
-                    <div class="item">
-                      <img src="img/iPhone6White1.png" class="screenshot" alt="Screenshot of Trivia Black">
-                    </div>
-                    <div class="item active left">
-                      <img src="img/iPhone6White1.png" class="screenshot" alt="Screenshot of Trivia Black">
-                    </div>
-                    <div class="item next left">
-                      <img src="img/iPhone6White1.png" class="screenshot" alt="Screenshot of Trivia Black">
-                    </div>
-                    <div class="item">
-                      <img src="img/iPhone6White1.png" class="screenshot" alt="Screenshot of Trivia Black">
-                    </div>
-                    <div class="item">
-                      <img src="img/iPhone6White1.png" class="screenshot" alt="Screenshot of Trivia Black">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="sqdiv">
-                <img src="img/mzl.clrnjwyb.png" class="app-icon img-rounded">
-                <h1>Trivia Black</h1>
-                <h2>A celebration of Black culture disguised as a game.</h2>
-                <a href="https://apps.apple.com/us/app/trivia-black/id1476178356" class="app-store-badge"
-                  target="_blank">
-                  <img src="images/app-store-black-on-color@2x-vUVAkYHUgzYCyeyfUGm8cda3C.png">
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.swyftstudios.trivia_black"
-                  class="google-batch" target="_blank"><img src="images/googleplay-btn.png"></a>
-              </div>
-              <div class="power-by">Powered By <a href="http://www.swyftstudios.com" target="_blank">Swyft Studios</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer>
-        <div class="container">
-          <div class="footer-nav col-xs-12 col-sm-8 pull-right text-right">
-            <a href="privacy_policy.html">Privacy Policy</a> &middot;
-            <a href="terms_and_conditions.html">Terms</a> &middot;
-            <a href="account-deletion.html">Delete your account</a> &middot;
-            <a href="support.html">Support</a> &middot;
-            <a href="mailto:contact@triviablack.com">Contact</a>
-          </div>
-        </div>
-      </footer>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="img/tb-icon-192.png" alt="" width="40" height="40"><span>Trivia Black</span></a>
+      <nav class="site-nav" aria-label="Main">
+        <a class="nav-link" href="#how">How it plays</a>
+        <a class="nav-link" href="#events">Live events</a>
+        <a class="nav-link" href="#sponsor">Sponsor</a>
+        <a class="btn-gold btn-sm" href="#get-the-app">Get the app</a>
+      </nav>
     </div>
-    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </div>
-  <script>
-    window.skit = (function () {
-      var objects = {};
-      var modules = {};
-      function define(resourcePath, deps, fn) {
-        modules[resourcePath] = { deps: deps, fn: fn };
-      }
-      function load(resourcePath) {
-        if (!(resourcePath in objects)) {
-          if (resourcePath in modules) {
-            var module = modules[resourcePath];
-            var args = [];
-            for (var i = 0; i < module.deps.length; i++) {
-              args.push(load(module.deps[i]));
-            }
-            objects[resourcePath] = module.fn.apply(window, args);
-          } else {
-            objects[resourcePath] = null;
-          }
-        }
-        return objects[resourcePath];
-      }
-      return {
-        define: define,
-        modules: modules,
-        env: {
-          "productionAPI": true,
-          "appEngineHost": "https://launchkit-images.appspot.com/",
-          "publicRoot": "public"
-        },
-        load: load
-      };
-    })();
-  </script>
-  <script src="js/skit.js"></script>
-  <script src="js/websites-vnnOdYzmWkWxqmQ8f1fdmP7Zi.js"></script>
-  <script>
-    (function () {
-      var netproxy = skit.load("skit.platform.netproxy:js");
-      netproxy.__register__("lk", {
-        "name": "lk",
-        "csrfToken": "ad2HhD3720rQFvEUE8m+Sw=="
-      });
+  </header>
 
-      var ControllerKlass = skit.load("public.websites.__id__.WebsitePublic:js");
-      var controller = new ControllerKlass({
-        "__id__": "cJ9CtLode_c"
-      });
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div>
+          <h1 id="hero-title"><img src="img/tb-wordmark.webp" alt="Trivia Black" width="640" height="433" fetchpriority="high"></h1>
+          <p class="eyebrow">The #1 Black culture quiz game</p>
+          <p class="tagline">Know the culture? <em>Prove it.</em></p>
+          <p class="lede">Head-to-head trivia on Black history, music, film and TV, sports, geography and Black Girl Magic. Spin the wheel, get it right and win all six before your opponent does.</p>
+          <div class="stores">
+            <a class="apple" href="https://apps.apple.com/us/app/trivia-black/id1476178356"><img src="images/app-store-black-on-color@2x-vUVAkYHUgzYCyeyfUGm8cda3C.png" alt="Download on the App Store" width="163" height="48"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.swyftstudios.trivia_black"><img src="images/googleplay-btn.png" alt="Get it on Google Play" width="163" height="48"></a>
+          </div>
+          <p class="hero-more">Planning an event? <a href="#events">Play live with no download</a></p>
+        </div>
+        <div class="hero-phones">
+          <div class="phone"><img src="img/screens/wheel.webp" alt="Trivia Black game screen: two players face off and the category wheel is ready to spin" width="540" height="1173" fetchpriority="high"></div>
+          <div class="phone"><img src="img/screens/question.webp" alt="A Black History question: whose December 1955 arrest sparked the Montgomery Bus Boycott, with four answer choices" width="540" height="1173" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
 
-      var controllerProperties = { "website": { "facebookLink": "", "domain": null, "disableLkBranding": false, "termsLink": "", "waitingListLabel": "", "appName": "Squad Up", "images": { "screenshots": { "iPhone": [{ "url": "https://lh3.googleusercontent.com/6Klew47hbLtrKRhKiMYSJEO3atS3nBOcUsej87N9nciQi2MG7bCdOsu17lG4a5EVhOur2JfQAZ5UbSmTD3EPhAkUSmrrzKM", "imageId": "PLjmxoaKMb8" }, { "url": "https://lh3.googleusercontent.com/4xwEE11oDDkPVz6B6yPLYgTEpIBFTBCKFj4NuhqdQJR5SfiJt5bZqJqMuUapc4UOyApW5VGNUtTSlmsJZbGXl9kMb8GiPQ", "imageId": "vjBO0bG178s" }, { "url": "https://lh3.googleusercontent.com/oqoIuzZGqUmV2Wu_toLMES9uDM4K75Y3NDSyghBknlw7X5ktfhpcrLEOlG8qRWcrp9JX7kxjwNMp-xMgwrYhImMw8Kgntg", "imageId": "mkH9VM8LX8s" }, { "url": "https://lh3.googleusercontent.com/9GaEOdQxLY4JoqP_3ZV_hdZGFDqQU_bEiLZs_Fq-GslDZwX-VIS0LLUWLt_d8x-l4yi4Q6yFf9gx_RrQeO3Lqa2g9dWv", "imageId": "eUfDRyIk0QI" }, { "url": "https://lh3.googleusercontent.com/4vpLhrIFRKKMbM-X4YkVIdT9I8xPrKHGxJ26KGE4f7RaYSgtGDeXD0irfrJ0cJLO9RNDPDEqY2rkDkfmg1QPTyXXoh8rog", "imageId": "Qd0X8luMIP0" }] }, "icon": { "url": "https://lh3.googleusercontent.com/f9G9G60w73f-lH99jaFxMoeMtHN7iG7BPk-YW4wDjimsSLTUfoT1ykf_6wsMAD8PdpWhHo8SWWiPy2EP9bABSTKAQ5Sm", "id": "ECMPSLbVMMg" } }, "blogLink": "", "supportLink": "", "longDescription": "Squad Up is the most lit version of charades ever! Gather up your friends and have them give you hints as you try and guess the word that?s on your head before the timer runs out. Your game night will never be the same again!\n\nDecks Include:\n-\tHip Hop\n-\tR\u0026B\n-      Black Girl Magic\n-      TV Shows\n-       And more! \n\nYou playing or nah?", "font": "", "playStoreId": "", "isPro": null, "waitingListLink": "", "primaryColor": "#0C0C0C", "keywords": "", "googleAnalyticsId": "", "itunesProviderToken": "", "shortDescription": "Squad Up is the most lit version of charades ever! Gather up your friends and have them give you hints as you try and guess the word that?s on your head before the timer runs out. ...", "id": "cJ9CtLode_c", "loginLink": "", "privacyLink": "", "itunesCampaignToken": "", "author": "Rico Brown", "tagline": "A More Lit Version of Charades", "frameScreenshots": "white", "customCss": null, "itunesId": "1111849694", "pressLink": "", "instagramLink": "", "customLinkLabel": "", "twitterLink": "", "template": "8", "mixpanelBadge": false, "customLink": "", "homeUrl": "index.html" } };
-      for (var k in controllerProperties) {
-        controller[k] = controllerProperties[k];
-      }
+    <section class="section section-alt" id="whats-new" aria-labelledby="new-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Version 3.1.0 &middot; rolling out now</p>
+          <h2 id="new-title">What&rsquo;s new</h2>
+          <p class="lede">The game you remember, rebuilt. Update from the App Store or Google Play to get it.</p>
+        </div>
+        <div class="new-grid">
+          <ul class="features">
+            <li class="feature a-blue">
+              <h3>Multiplayer challenges are back</h3>
+              <p>Challenge a friend by username, run back a rematch, or get matched with a random opponent.</p>
+            </li>
+            <li class="feature a-red">
+              <h3>New decks, no update needed</h3>
+              <p>Fresh topic decks arrive regularly and show up in the app without downloading an update.</p>
+            </li>
+            <li class="feature a-green">
+              <h3>Solo mode</h3>
+              <p>No opponent needed. Play on your own and chase your best score.</p>
+            </li>
+            <li class="feature a-orange">
+              <h3>Daily rewards</h3>
+              <p>Open the app each day to collect a daily reward.</p>
+            </li>
+            <li class="feature a-purple">
+              <h3>Restore Purchases</h3>
+              <p>New phone? Tap Restore Purchases in Settings to get Ad-Free back.</p>
+            </li>
+          </ul>
+          <div class="new-phones">
+            <div class="phone"><img src="img/screens/topics.webp" alt="Topic picker with a premium Hip-Hop Classics deck and topics including Music, TV/Movies, Black Girl Magic, Black History, Sports and Geography" width="540" height="1173" loading="lazy"></div>
+            <div class="phone"><img src="img/screens/solo.webp" alt="Solo mode question about music: which artist released the album Songs in A Minor" width="540" height="1173" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      window.skit.controller = controller;
-      controller.recursiveLoad();
-      controller.recursiveReady();
-    })();
-  </script>
+    <section class="section" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">How it plays</p>
+          <h2 id="how-title">Spin. Answer. Win all six.</h2>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <div class="phone"><img src="img/screens/home.webp" alt="Home screen with games where it is your turn and games waiting on your opponent" width="540" height="1173" loading="lazy"></div>
+            <div>
+              <span class="step-num" aria-hidden="true">1</span>
+              <h3>Pick your opponent</h3>
+              <p>Find a friend by username, ask for a rematch, or play someone new.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="phone"><img src="img/screens/wheel.webp" alt="The category wheel, with segments for film, geography, music, Black History, sports and more" width="540" height="1173" loading="lazy"></div>
+            <div>
+              <span class="step-num" aria-hidden="true">2</span>
+              <h3>Spin the wheel</h3>
+              <p>The wheel picks your category: Black History, Music, Film and TV, Sports, Geography or Black Girl Magic.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="phone"><img src="img/screens/ranking.webp" alt="World Ranking leaderboard listing players by level" width="540" height="1173" loading="lazy"></div>
+            <div>
+              <span class="step-num" aria-hidden="true">3</span>
+              <h3>Collect all six</h3>
+              <p>Win a piece from every category before your opponent does, then level up and climb the World Ranking.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section events" id="events" aria-labelledby="events-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Live event mode</p>
+          <h2 id="events-title">Bring Trivia Black to your event</h2>
+          <p class="lede">A live game for the whole room, and nobody has to download anything.</p>
+        </div>
+        <ol class="live-steps">
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3"/></svg>
+            <div><strong>Scan the QR code</strong><span>Players point their phone camera at the code on screen.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+            <div><strong>Enter a name and play</strong><span>No app and no account. Everyone answers on their own phone.</span></div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4M7 13V10M12 13V8M17 13v-2"/></svg>
+            <div><strong>Watch the leaderboard</strong><span>Scores update live on the TV as the room plays.</span></div>
+          </li>
+        </ol>
+        <div class="proof">
+          <p>In June 2026, live event mode powered a <strong>Juneteenth celebration at a Fortune 500 tech company</strong>.</p>
+        </div>
+        <p class="eyebrow">Made for</p>
+        <ul class="audiences">
+          <li class="audience a-blue"><h3>ERGs and companies</h3><p>Juneteenth, Black History Month, heritage events and team socials.</p></li>
+          <li class="audience a-red"><h3>HBCUs and schools</h3><p>Homecoming, orientation, student orgs and classroom review.</p></li>
+          <li class="audience a-green"><h3>Churches and community groups</h3><p>Fellowship nights, youth programs and fundraisers.</p></li>
+          <li class="audience a-orange"><h3>Bars and venues</h3><p>Trivia nights with a live leaderboard on your TVs.</p></li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn-gold" href="mailto:contact@triviablack.com?subject=Event%20inquiry&amp;body=Hi%20Trivia%20Black%20team%2C%0A%0AWe%27d%20like%20to%20bring%20a%20live%20Trivia%20Black%20game%20to%20our%20event.%0A%0AEvent%20date%3A%20%0AAudience%20size%3A%20%0AIn%20person%20or%20remote%3A%20%0AOrganization%3A%20%0A">Plan your event</a>
+          <p class="muted">Tell us the date, the audience size and whether it&rsquo;s in person or remote.<br>Or email <a class="break" href="mailto:contact@triviablack.com">contact@triviablack.com</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="sponsor" aria-labelledby="sponsor-title">
+      <div class="wrap">
+        <div class="sponsor-card">
+          <div>
+            <p class="eyebrow">For Black-owned businesses and brands</p>
+            <h2 id="sponsor-title">Sponsor a deck</h2>
+            <p class="muted">Put your name on a deck about the culture you care about, in front of players who know it and love it.</p>
+            <a class="btn-gold" href="mailto:contact@triviablack.com?subject=Sponsorship&amp;body=Hi%20Trivia%20Black%20team%2C%0A%0AWe%27d%20like%20to%20talk%20about%20sponsoring%20a%20deck.%0A%0ABrand%3A%20%0AWebsite%3A%20%0ADeck%20idea%20or%20theme%3A%20%0ATiming%3A%20%0A">Talk sponsorship</a>
+          </div>
+          <ul>
+            <li>A themed deck presented by your brand</li>
+            <li>New decks reach players without an app update</li>
+            <li>Take it to live events, from ERG celebrations to trivia nights</li>
+            <li>Work with us on the theme and the questions</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="get-the-app" aria-labelledby="closing-title">
+      <div class="wrap closing">
+        <div>
+          <h2 id="closing-title" class="tagline">Know the culture? <em>Prove it.</em></h2>
+          <p class="muted">Free to download on iPhone, iPad and Android.</p>
+          <div class="stores">
+            <a class="apple" href="https://apps.apple.com/us/app/trivia-black/id1476178356"><img src="images/app-store-black-on-color@2x-vUVAkYHUgzYCyeyfUGm8cda3C.png" alt="Download on the App Store" width="163" height="48" loading="lazy"></a>
+            <a href="https://play.google.com/store/apps/details?id=com.swyftstudios.trivia_black"><img src="images/googleplay-btn.png" alt="Get it on Google Play" width="163" height="48" loading="lazy"></a>
+          </div>
+        </div>
+        <div id="follow">
+          <h3>Follow us</h3>
+          <div class="socials">
+            <a class="btn-line" href="https://x.com/triviablack"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg><span>@triviablack<span class="visually-hidden"> on X</span></span></a>
+            <a class="btn-line" href="https://www.instagram.com/triviablack/"><svg class="stroke" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="dot" cx="17.5" cy="6.5" r="1.2"/></svg><span>@triviablack<span class="visually-hidden"> on Instagram</span></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="legal-footer">
+    <a href="privacy_policy.html">Privacy Policy</a>
+    <a href="terms_and_conditions.html">Terms</a>
+    <a href="support.html">Support</a>
+    <a href="account-deletion.html">Delete your account</a>
+    <a href="mailto:contact@triviablack.com">Contact</a>
+    <div style="margin-top:10px">&copy; 2026 Swyft Studios LLC</div>
+  </footer>
+
+  <!-- Google Analytics (carried over from the previous index.html) -->
   <script>
     (function (i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -273,42 +241,6 @@
 
     ga('create', 'UA-141179605-1', 'auto');
     ga('send', 'pageview');
-
-  </script>
-  <script>
-    (function () {
-
-
-      var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-      var isAndroid = /(android)/i.test(navigator.userAgent);
-
-      if (iOS) {
-        //alert("iOS Device!");
-        setTimeout(function () {
-          window.location.replace("https://apps.apple.com/us/app/trivia-black/id1476178356");
-          //    if (confirm('Download from App Store?')) {
-
-          //    }
-          //    else {
-
-          //    }
-        }
-          , 3000);
-      }
-      else if (isAndroid) {
-        setTimeout(function () {
-          window.location.replace("https://play.google.com/store/apps/details?id=com.swyftstudios.trivia_black");
-          //    if (confirm('Download from App Store?')) {
-
-          //    }
-          //    else {
-
-          //    }
-        }
-          , 3000);
-      }
-    })();
   </script>
 </body>
-
 </html>
