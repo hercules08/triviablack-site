@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Deep-link fallback (/g/ /u/ /d/ /i/): the app opens these links itself when it's installed.
+       Identical copies live at 404.html and {g,u,d,i}/index.html; js/applink.js fills in the copy. -->
+  <title>Open in Trivia Black</title>
+  <meta name="description" content="Open this link in Trivia Black, the #1 Black culture quiz game. Free on iPhone and Android.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" type="image/png" sizes="192x192" href="/img/tb-icon-192.png">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <meta name="apple-itunes-app" content="app-id=1476178356">
+  <meta property="og:site_name" content="Trivia Black">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Play me in Trivia Black">
+  <meta property="og:description" content="Know the culture? Prove it. Head-to-head trivia on Black history, music, film and TV, sports and more.">
+  <meta property="og:image" content="https://www.triviablack.com/img/og-trivia-black.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/legal.css">
+  <link rel="stylesheet" href="/css/site.css?v=1">
+  <style>
+    .dl { min-height: 70vh; display: flex; align-items: center; padding: 48px 0 64px; text-align: center; }
+    .dl .wrap { max-width: 560px; }
+    .dl-icon { width: 96px; height: 96px; border-radius: 22px; margin: 0 auto 20px; }
+    .dl h1 { font-size: clamp(1.9rem, 7vw, 2.6rem); font-weight: 900; }
+    .dl .eyebrow { color: var(--gold); font-family: var(--display); font-weight: 800; letter-spacing: .08em; text-transform: uppercase; font-size: .85rem; margin-bottom: .6em; }
+    .dl .lede { color: var(--muted); }
+    .dl .btn-gold { display: inline-flex; justify-content: center; align-items: center; min-height: 52px; min-width: 240px; font-size: 1.1rem; margin: 8px 0 28px; }
+    .dl .stores { justify-content: center; }
+    .dl-get { border-radius: 14px; padding: 4px; transition: box-shadow .3s ease; }
+    .dl-get.dl-nudge { box-shadow: 0 0 0 3px var(--gold); }
+    .dl-get p { margin: 0 0 12px; color: var(--muted); font-size: .95rem; }
+    .dl-home { margin-top: 28px; font-size: .95rem; }
+  </style>
+</head>
+<body class="site">
+  <div class="rainbow" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/img/tb-icon-192.png" alt="" width="40" height="40"><span>Trivia Black</span></a>
+    </div>
+  </header>
+
+  <main id="main" class="dl">
+    <div class="wrap">
+      <img class="dl-icon" src="/img/tb-icon-192.png" alt="" width="96" height="96">
+      <p class="eyebrow" id="dl-eyebrow">Trivia Black</p>
+      <h1 id="dl-title">Open in Trivia Black</h1>
+      <p class="lede" id="dl-lede">Open this link in the Trivia Black app. New here? Get the free app first.</p>
+      <a class="btn-gold" id="dl-open" href="/" hidden>Open in app</a>
+      <div class="dl-get" id="dl-get">
+        <p>Don't have Trivia Black yet? It's free.</p>
+        <div class="stores">
+          <a class="apple" id="dl-apple" href="https://apps.apple.com/us/app/trivia-black/id1476178356"><img src="/images/app-store-black-on-color@2x-vUVAkYHUgzYCyeyfUGm8cda3C.png" alt="Download on the App Store" width="163" height="48"></a>
+          <a id="dl-play" href="https://play.google.com/store/apps/details?id=com.swyftstudios.trivia_black"><img src="/images/googleplay-btn.png" alt="Get it on Google Play" width="163" height="48"></a>
+        </div>
+      </div>
+      <p class="dl-home"><a href="/">What is Trivia Black?</a></p>
+    </div>
+  </main>
+
+  <footer class="legal-footer">
+    <a href="/privacy_policy.html">Privacy Policy</a>
+    <a href="/terms_and_conditions.html">Terms</a>
+    <a href="/support.html">Support</a>
+    <a href="mailto:contact@triviablack.com">Contact</a>
+    <div style="margin-top:10px">&copy; 2026 Swyft Studios LLC</div>
+  </footer>
+
+  <script src="/js/applink.js"></script>
+  <!-- Google Analytics 4: "TriviaBlack - GA4" web stream (same tag as index.html) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-90Z887JE4H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-90Z887JE4H');
+  </script>
+</body>
+</html>

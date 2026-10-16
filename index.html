@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Deep links: a host that answers unknown paths with this page (an SPA-style fallback) sends
+       /g/{id}, /u/{name}, /d/{topic}, /i/{code} to the fallback page's query form instead. -->
+  <script>(function (l) { var m = /^\/([gudi])\/([^\/?#]+)/i.exec(l.pathname); if (m) l.replace("/" + m[1].toLowerCase() + "/?id=" + m[2]); })(window.location);</script>
   <title>Trivia Black: The #1 Black culture quiz game</title>
   <meta name="description" content="Know the culture? Prove it. Head-to-head trivia on Black history, music, film and TV, sports, geography and Black Girl Magic. Free to download on iPhone and Android, plus live games for your event.">
   <link rel="canonical" href="https://www.triviablack.com/">
