@@ -1,11 +1,14 @@
 [
   {
-    "relation": ["delegate_permission/common.handle_all_urls"],
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
     "target": {
       "namespace": "android_app",
       "package_name": "com.swyftstudios.trivia_black",
       "sha256_cert_fingerprints": [
-        "REPLACE_WITH_PLAY_APP_SIGNING_SHA256_FROM_PLAY_CONSOLE_APP_INTEGRITY"
+        "0D:13:76:3A:44:DA:27:DD:87:DD:0B:E5:F1:C7:FA:68:68:EB:3F:DC:F5:EF:38:2A:84:8D:7F:B7:68:CC:E4:E9",
+        "4F:0E:DE:70:9D:67:12:E6:5C:14:DC:59:DE:C1:28:3E:04:BA:9F:40:74:42:42:BA:47:97:59:06:AF:0B:31:CE"
       ]
     }
   }
