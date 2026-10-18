@@ -16,7 +16,7 @@
   </header>
   <main class="legal">
     <h1>Privacy Policy</h1>
-    <p class="effective">Effective October 4, 2026</p>
+    <p class="effective">Effective October 18, 2026</p>
 
     <p>Trivia Black is a head-to-head trivia game published by <strong>Swyft Studios LLC</strong> ("Swyft Studios", "we", "us"). This policy explains what information we collect when you use the Trivia Black apps for iOS and Android and this website, how we use and share it, and the choices you have. If you have questions, email <a href="mailto:contact@triviablack.com">contact@triviablack.com</a>.</p>
 
@@ -37,6 +37,7 @@
       <li><strong>Device and app identifiers</strong>: a push-notification token (if you allow notifications), an app-instance identifier used for analytics, and your device's advertising identifier (if your device settings allow it).</li>
       <li><strong>Usage and diagnostics</strong>: which screens you use and in-app events, crash and performance information, app version, device model and operating system.</li>
       <li><strong>Approximate location</strong>: our analytics and advertising providers may estimate a general location (such as city or region) from your IP address. We don't collect precise location.</li>
+      <li><strong>On our websites</strong> (triviablack.com and the web game): we use Google Analytics and Microsoft Clarity to understand how the sites are used, including pages viewed, clicks, scrolling and mouse movement, the site that referred you, device and browser type, and approximate location. Clarity creates heatmaps and session replays; it masks text you type into forms. These tools use cookies, which you can block or delete in your browser settings.</li>
     </ul>
 
     <h2>How we use information</h2>
@@ -53,7 +54,7 @@
     <p>We don't sell your personal information. We share it only as follows:</p>
     <ul>
       <li><strong>With other players</strong>: your username, display name, profile photo, level and game results are visible to players you play with and in rankings.</li>
-      <li><strong>With service providers</strong> that process data for us under our instructions: our hosting infrastructure; Google Firebase (analytics, crash reporting and push notifications); Mailchimp Transactional / Mandrill (account emails); and Apple and Google (app distribution and payments).</li>
+      <li><strong>With service providers</strong> that process data for us under our instructions: our hosting infrastructure; Google Firebase (analytics, crash reporting and push notifications); Google Analytics and Microsoft Clarity (website analytics); Amazon Web Services and Mailchimp Transactional (account emails); and Apple and Google (app distribution and payments).</li>
       <li><strong>With advertising partners</strong>: we use Google AdMob to show ads. AdMob may collect your device's advertising identifier, approximate location, app interactions and diagnostics to serve, measure and protect ads. See <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">how Google uses information from apps that use its services</a>.</li>
       <li><strong>With Facebook</strong>, only if you choose Facebook Login, to authenticate you. We don't send Facebook your gameplay data, and the app doesn't log app events or your advertising identifier to Facebook.</li>
       <li><strong>For legal reasons</strong>: to comply with law or valid legal process, to protect the rights, safety and property of our players or others, or as part of a merger, acquisition or sale of assets (with notice to you).</li>
@@ -101,5 +102,23 @@
     <a href="mailto:contact@triviablack.com">Contact</a>
     <div style="margin-top:10px">© 2026 Swyft Studios LLC</div>
   </footer>
+
+  <!-- Google Analytics 4: "TriviaBlack - GA4" web stream (property 361284489, account TriviaBlack) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-90Z887JE4H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-90Z887JE4H');
+  </script>
+
+  <!-- Microsoft Clarity: "Trivia Black Site" project (heatmaps + session replays; typed text is masked) -->
+  <script>
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+      t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "yziiglsvoy");
+  </script>
 </body>
 </html>

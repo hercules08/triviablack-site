@@ -1,0 +1,18 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "257V78375V.com.swyftstudios.triviablack",
+        "appIDs": ["257V78375V.com.swyftstudios.triviablack"],
+        "paths": ["/g/*", "/u/*", "/d/*", "/i/*"],
+        "components": [
+          { "/": "/g/*", "comment": "Open a game: /g/{matchupId}" },
+          { "/": "/u/*", "comment": "Challenge or view a player: /u/{username}" },
+          { "/": "/d/*", "comment": "Open a deck or topic: /d/{deckId or topic}" },
+          { "/": "/i/*", "comment": "Invite: /i/{code}" }
+        ]
+      }
+    ]
+  }
+}
